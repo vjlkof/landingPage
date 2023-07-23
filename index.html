@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Landing Page</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <section class="header-section">
+      <div class="container">
+        <nav class="nav-container">
+          <div class="btn-logo-container">
+            <button id="btn-hamburger" aria-label="Toggle Navigation">
+              <span class="btn-line"></span>
+              <span class="btn-line"></span>
+              <span class="btn-line"></span>
+            </button>
+            <img src="logo.png" alt="Header Logo" />
+          </div>
+          <div class="nav-right">
+            <a href="someLink">header link one</a>
+            <a href="someLink">header link two</a>
+            <a href="someLink">header link three</a>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-container">
+          <div class="hero-left-side">
+            <h1 class="title">This website is awesome</h1>
+            <p>
+              This website has some subtect that goes here under the main title.
+              It's a smaller font and the color is lower contrast
+            </p>
+            <button type="button">Sign up</button>
+          </div>
+          <div class="hero-right-side">
+            <img src="imgage.png" alt="this is a placeholder for an image" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="information-section">
+      <h2 class="information-subtitle">Some random information.</h2>
+      <div class="box-wrapper">
+        <div class="box">
+          <img src="" alt="some image" />
+          <footer class="footer-image">
+            this is some subtext under an ilustration or image
+          </footer>
+        </div>
+        <div class="box">
+          <img src="" alt="some image" />
+          <footer class="footer-image">
+            this is some subtext under an ilustration or image
+          </footer>
+        </div>
+        <div class="box">
+          <img src="" alt="some image" />
+          <footer class="footer-image">
+            this is some subtext under an ilustration or image
+          </footer>
+        </div>
+        <div class="box">
+          <img src="" alt="some image" />
+          <footer class="footer-image">
+            this is some subtext under an ilustration or image
+          </footer>
+        </div>
+      </div>
+    </section>
+    <section class="phrase-section">
+      <div class="phrase-wrapper">
+        <p class="phrase">
+          This is an inspiring quote, or a testimonial from a customer. Maybe
+          it's just filling up space, or maybe people will actually read it. Who
+          knows? All I know is that it looks nice.
+        </p>
+        <p class="who-phrase">-Thor, God of Thunder</p>
+      </div>
+    </section>
+    <section class="call-to-action-section">
+      <div class="container">
+        <div class="call-to-action-container">
+          <div class="call-to-action-message">
+            <p class="call-to-action">Call to action! It's time!</p>
+            <p class="message">
+              Sign up for our product by clicking that button right over there!
+            </p>
+          </div>
+          <button type="button">Sign up</button>
+        </div>
+      </div>
+    </section>
+    <script>
+      const hamburgerIcon = document.getElementById("btn-hamburger");
+      const navRight = document.querySelector(".nav-right");
+      hamburgerIcon.addEventListener("click", () => {
+        navRight.classList.toggle("show");
+      });
+    </script>
+  </body>
+  <footer class="page-footer">
+    <p class="copyright">Copyright © The Odin project 2021</p>
+  </footer>
+</html>
